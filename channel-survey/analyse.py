@@ -47,7 +47,7 @@ def plot(results):
 
 if __name__ == '__main__':
     results = run()
-    with open('./results.json', 'w') as out:
+    with open('./result.json', 'w') as out:
         json.dump(results, out)
     pp = pprint.PrettyPrinter(indent=2)
     pp.pprint(results)
